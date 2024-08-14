@@ -1,0 +1,293 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Evemythra",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "eventSearch"
+    },
+    {
+      "name": "greetings"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "SearchEvents"
+    },
+    {
+      "name": "ShowEventReviews"
+    }
+  ],
+  "entities": [
+    {
+      "name": "AirportCode"
+    },
+    {
+      "name": "Events"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "geography"
+  ],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "Near",
+      "mode": true,
+      "words": "near,around,close,nearby",
+      "activated": true
+    },
+    {
+      "name": "Show",
+      "mode": true,
+      "words": "show,find,look,search",
+      "activated": true
+    }
+  ],
+  "regex_features": [
+    {
+      "name": "AirportCodeRegex",
+      "pattern": "[a-z]{3}",
+      "activated": true
+    }
+  ],
+  "utterances": [
+    {
+      "text": "what can i do?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what are the available options?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "thank you",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "good afternoon",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hii",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "great work",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "gd mrng",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "have a good day",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "gd aftrn",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "gd",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "try this",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "my pleasure",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "gd ngt",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "have a wonderfull day",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "gd n8t",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "pleasure is all mine",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "event near geography",
+      "intent": "SearchEvents",
+      "entities": []
+    },
+    {
+      "text": "show events near airportcode airport",
+      "intent": "SearchEvents",
+      "entities": [
+        {
+          "entity": "AirportCode",
+          "startPos": 17,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "can you show me events near airport ?",
+      "intent": "SearchEvents",
+      "entities": []
+    },
+    {
+      "text": "find events near airportcode",
+      "intent": "SearchEvents",
+      "entities": [
+        {
+          "entity": "AirportCode",
+          "startPos": 17,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "find events around airportcode airport",
+      "intent": "SearchEvents",
+      "entities": [
+        {
+          "entity": "AirportCode",
+          "startPos": 19,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "find hotels around airportcode airport",
+      "intent": "SearchEvents",
+      "entities": [
+        {
+          "entity": "AirportCode",
+          "startPos": 19,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "can i see the reviews of events",
+      "intent": "ShowEventReviews",
+      "entities": [
+        {
+          "entity": "Events",
+          "startPos": 25,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "find reviews of events",
+      "intent": "ShowEventReviews",
+      "entities": [
+        {
+          "entity": "Events",
+          "startPos": 16,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "what are the reviews of event ?",
+      "intent": "ShowEventReviews",
+      "entities": [
+        {
+          "entity": "Events",
+          "startPos": 24,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "can you show me the reviews of event ?",
+      "intent": "ShowEventReviews",
+      "entities": [
+        {
+          "entity": "Events",
+          "startPos": 31,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "show me reviews of events",
+      "intent": "ShowEventReviews",
+      "entities": [
+        {
+          "entity": "Events",
+          "startPos": 19,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "available events",
+      "intent": "eventSearch",
+      "entities": []
+    },
+    {
+      "text": "what are the nearby events",
+      "intent": "eventSearch",
+      "entities": []
+    },
+    {
+      "text": "give me the list of events",
+      "intent": "eventSearch",
+      "entities": []
+    }
+  ]
+}
